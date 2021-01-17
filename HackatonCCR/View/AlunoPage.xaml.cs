@@ -38,13 +38,28 @@ namespace HackatonCCR.View
                 AlunoInstitution.Text = alunoDTO.Institution;
 
                 AlunoLideranca.Text = alunoDTO.Lideranca.ToString();
-                AlunoHabilidadesInterpessoais.Text = alunoDTO.HabilidadesInterpessoais.ToString();
-                AlunoTrabalhoEmGrupo.Text = alunoDTO.TrabalhoEmGrupo.ToString();
-                AlunoTrabalhoEtico.Text = alunoDTO.TrabalhoEtico.ToString();
-                AlunoResolucaoDeProblema.Text = alunoDTO.ResolucaoDeProblema.ToString();
-                AlunoFlexibilidade.Text = alunoDTO.Flexibilidade.ToString();
-                AlunoComunicacao.Text = alunoDTO.Comunicacao.ToString();
+                SliderLideranca.Value = alunoDTO.Lideranca;
 
+                AlunoHabilidadesInterpessoais.Text = alunoDTO.HabilidadesInterpessoais.ToString();
+                SliderHabilidadesInterpessoais.Value = alunoDTO.HabilidadesInterpessoais;
+
+                AlunoTrabalhoEmGrupo.Text = alunoDTO.TrabalhoEmGrupo.ToString();
+                SliderTrabalhoEmGrupo.Value = alunoDTO.TrabalhoEmGrupo;
+
+                AlunoTrabalhoEtico.Text = alunoDTO.TrabalhoEtico.ToString();
+                SliderTrabalhoEtico.Value = alunoDTO.ResolucaoDeProblema;
+
+                AlunoResolucaoDeProblema.Text = alunoDTO.ResolucaoDeProblema.ToString();
+                SliderResolucaoDeProblema.Value = alunoDTO.ResolucaoDeProblema;
+
+                AlunoFlexibilidade.Text = alunoDTO.Flexibilidade.ToString();
+                SliderFlexibilidade.Value = alunoDTO.Flexibilidade;
+
+                AlunoComunicacao.Text = alunoDTO.Comunicacao.ToString();
+                SliderComunicacao.Value = alunoDTO.Comunicacao;
+
+
+                imgBtnTipoInclusao.Source = alunoDTO.TipoInclusao;
                 await App.Database.DeleteAlunoAsync(alunos.FirstOrDefault());
             }
 

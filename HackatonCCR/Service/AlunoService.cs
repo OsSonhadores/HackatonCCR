@@ -27,6 +27,13 @@ namespace HackatonCCR.Service
                 Distancia = "10.5 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Trabalho Em Grupo",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 100,
+                TrabalhoEtico = 80,
+                Lideranca = 50,
             };
 
             var aluno2 = new AlunoDTO()
@@ -41,6 +48,13 @@ namespace HackatonCCR.Service
                 Distancia = "8.2 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Trabalho Em Grupo",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 100,
+                TrabalhoEtico = 80,
+                Lideranca = 50,
             };
 
             var aluno3 = new AlunoDTO()
@@ -55,6 +69,13 @@ namespace HackatonCCR.Service
                 Distancia = "2.3 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Trabalho Em Grupo",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 100,
+                TrabalhoEtico = 80,
+                Lideranca = 50,
             };
 
             var aluno4 = new AlunoDTO()
@@ -68,7 +89,14 @@ namespace HackatonCCR.Service
                 TipoInclusao = "CadeiranteIcon",
                 Distancia = "1.9 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
-                HabilidadePrincipal = "Trabalho Em Grupo",                
+                HabilidadePrincipal = "Trabalho Em Grupo",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 100,
+                TrabalhoEtico = 80,
+                Lideranca = 50,
             };
 
             var aluno5 = new AlunoDTO()
@@ -83,6 +111,13 @@ namespace HackatonCCR.Service
                 Distancia = "1.0 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Comunicação",
+                Comunicacao = 100,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 70,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 70,
+                TrabalhoEtico = 80,
+                Lideranca = 60,
             };
 
             var aluno6 = new AlunoDTO()
@@ -97,6 +132,13 @@ namespace HackatonCCR.Service
                 Distancia = "3.6 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Resolucao De Problema",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 100,
+                TrabalhoEmGrupo = 70,
+                TrabalhoEtico = 80,
+                Lideranca = 60,
             };
 
             var aluno7 = new AlunoDTO()
@@ -111,6 +153,14 @@ namespace HackatonCCR.Service
                 Distancia = "0.5 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Trabalho Etico",
+
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 70,
+                TrabalhoEtico = 100,
+                Lideranca = 90,
             };
 
             var aluno8 = new AlunoDTO()
@@ -125,17 +175,25 @@ namespace HackatonCCR.Service
                 Distancia = "0.2 KM",
                 Laudo = "https://blog.freedom.ind.br/laudo-medico-pcd/",
                 HabilidadePrincipal = "Lideranca",
+                Comunicacao = 60,
+                Flexibilidade = 80,
+                HabilidadesInterpessoais = 30,
+                ResolucaoDeProblema = 90,
+                TrabalhoEmGrupo = 70,
+                TrabalhoEtico = 80,
+                Lideranca = 100,
+            
             };
 
 
 
-            lista.Add(aluno1);
-            lista.Add(aluno2);
-            lista.Add(aluno3);
-            lista.Add(aluno4);
-            lista.Add(aluno5);
-            lista.Add(aluno6);
             lista.Add(aluno7);
+            lista.Add(aluno4);
+            lista.Add(aluno1);
+            lista.Add(aluno5);
+            lista.Add(aluno2);
+            lista.Add(aluno6);
+            lista.Add(aluno3);
             lista.Add(aluno8);
 
             return lista;

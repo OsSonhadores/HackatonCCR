@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HackatonCCR.View.MenuPage">
+             x:Class="HackatonCCR.View.MenuEmpresaPage">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout Orientation="Vertical">
@@ -14,9 +14,9 @@
                         />
 
 
-                    <ListView x:Name="lstMenuNavegacao" RowHeight="60"
+                    <ListView x:Name="lstMenuEmpresaNavegacao" RowHeight="60"
                               SeparatorVisibility="None" BackgroundColor="#fff"
-                              ItemSelected="lstMenuNavegacao_ItemSelected">
+                              ItemSelected="lstMenuEmpresaNavegacao_ItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -32,13 +32,13 @@
                                             VerticalOptions="Center"
                                             Margin="20,0,0,0"
                                             />
-                                        
+
                                         <Label Text="{Binding Title}"
                                                FontSize="Medium"
                                                VerticalOptions="Center"
                                                TextColor="#00BD51"
                                                />
-                                        
+
                                     </StackLayout>
                                 </ViewCell>
                             </DataTemplate>
@@ -46,7 +46,7 @@
                     </ListView>
 
 
-                
+
 
                 </StackLayout>
             </StackLayout>
@@ -58,5 +58,6 @@
     <MasterDetailPage.Detail>
         <ContentPage />
     </MasterDetailPage.Detail>
+
 
 </MasterDetailPage>

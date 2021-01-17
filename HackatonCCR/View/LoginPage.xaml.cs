@@ -21,7 +21,7 @@ namespace HackatonCCR.View
         {
             if (EntryEmail.Text.ToLower().Contains("empresa"))
             {
-                await Navigation.PushModalAsync((Page)Activator.CreateInstance(typeof(EmpresaPage)), true);
+                await Navigation.PushModalAsync((Page)Activator.CreateInstance(typeof(MenuEmpresaPage)), true);
             }
             else 
             {

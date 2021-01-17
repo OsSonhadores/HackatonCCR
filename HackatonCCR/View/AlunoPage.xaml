@@ -49,20 +49,32 @@
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal"
-                             HorizontalOptions="StartAndExpand"
-                             VerticalOptions="Start">
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="End">
 
                     <ImageButton x:Name="imgBtnTipoInclusao"
                         BackgroundColor="#00BD51"
-                                 />
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        WidthRequest="80"
+                        HeightRequest="50"
+                        />
 
                     <ImageButton Source="LaudoIcon"
                         BackgroundColor="#00BD51"
-                                 />
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        WidthRequest="80"
+                        HeightRequest="50"
+                        />
 
-                    <ImageButton Source="LaudoIcon"
+                    <ImageButton Source="ContatoIcon"
                         BackgroundColor="#00BD51"
-                                 />
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        WidthRequest="80"
+                        HeightRequest="50"
+                        />
 
                 </StackLayout>
 
@@ -95,7 +107,9 @@
                                          HorizontalOptions="StartAndExpand"
                                          Margin="5">
                                     <Label Text="Lideranca" TextColor="#303030" HorizontalOptions="Start"/>
-                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="180" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" ValueChanged="MudaLideranca"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="180" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaLideranca" 
+                                            x:Name="SliderLideranca" />
                                     <Label x:Name="AlunoLideranca" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -123,7 +137,8 @@
                                          Margin="5">
                                     <Label Text="Trabalho Em Grupo" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="125" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
-                                            ValueChanged="MudaTrabalhoEmGrupo"/>
+                                            ValueChanged="MudaTrabalhoEmGrupo"
+                                            x:Name="SliderTrabalhoEmGrupo"/>
                                     <Label x:Name="AlunoTrabalhoEmGrupo" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -150,7 +165,8 @@
                                          Margin="5">
                                     <Label Text="Comunicacao" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="160" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
-                                            ValueChanged="MudaComunicacao"/>
+                                            ValueChanged="MudaComunicacao"
+                                            x:Name="SliderComunicacao"/>
                                     <Label x:Name="AlunoComunicacao" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -177,7 +193,8 @@
                                          Margin="5">
                                     <Label Text="Resolucao De Problema" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="95" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
-                                            ValueChanged="MudaResolucaoDeProblema"/>
+                                            ValueChanged="MudaResolucaoDeProblema"
+                                            x:Name="SliderResolucaoDeProblema"/>
                                     <Label x:Name="AlunoResolucaoDeProblema" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -205,7 +222,8 @@
                                          Margin="5">
                                     <Label Text="Flexibilidade" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="165" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
-                                            ValueChanged="MudaFlexibilidade"/>
+                                            ValueChanged="MudaFlexibilidade"
+                                            x:Name="SliderFlexibilidade"/>
                                     <Label x:Name="AlunoFlexibilidade" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -232,7 +250,8 @@
                                          Margin="5">
                                     <Label Text="Habilidades Interpessoais" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="85" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
-                                            ValueChanged="MudaHabilidadesInterpessoais"/>
+                                            ValueChanged="MudaHabilidadesInterpessoais"
+                                            x:Name="SliderHabilidadesInterpessoais"/>
                                     <Label x:Name="AlunoHabilidadesInterpessoais" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
@@ -259,7 +278,8 @@
                                          Margin="5">
                                     <Label Text="Trabalho Ético" TextColor="#303030" HorizontalOptions="Start"/>
                                     <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="155" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0"
-                                            ValueChanged="MudaTrabalhoEtico"/>
+                                            ValueChanged="MudaTrabalhoEtico"
+                                            x:Name="SliderTrabalhoEtico"/>
                                     <Label x:Name="AlunoTrabalhoEtico" TextColor="#303030" FontAttributes="Bold"/>
                                 </StackLayout>
 
