@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace HackatonCCR.Repository
 {
-    public class AlunoRepository
+    public class Repository
     {
         readonly SQLiteAsyncConnection _database;
 
-        public AlunoRepository(string dbPath)
+        public Repository(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<Aluno>().Wait();
+            _database.CreateTableAsync<Escola>().Wait();
         }
 
-        //ROUTES CRUD
+        //CRUD
         public Task<List<Aluno>> GetAlunoAsync()
         {
             return _database.Table<Aluno>().ToListAsync();
@@ -46,6 +47,40 @@ namespace HackatonCCR.Repository
         {
             return _database.DeleteAsync(aluno);
         }
+
+
+
+        //CRUD
+        public Task<List<Escola>> GetEscolaAsync()
+        {
+            return _database.Table<Escola>().ToListAsync();
+        }
+
+        public Task<Escola> GetEscolaAsync(int id)
+        {
+            return _database.Table<Escola>()
+                            .Where(i => i.EscolaId == id)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveEscolaAsync(Escola escola)
+        {
+            if (escola.EscolaId != 0)
+            {
+                return _database.UpdateAsync(escola);
+            }
+            else
+            {
+                return _database.InsertAsync(escola);
+            }
+        }
+
+        public Task<int> DeleteEscolaAsync(Escola escola)
+        {
+            return _database.DeleteAsync(escola);
+        }
+
+
 
 
     }

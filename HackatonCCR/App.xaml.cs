@@ -10,18 +10,19 @@ namespace HackatonCCR
     public partial class App : Application
     {
 
-        static AlunoRepository database;
-        public static AlunoRepository Database
+        static Repository.Repository database;
+        public static Repository.Repository Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new AlunoRepository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Alunos2.db3"));
+                    database = new Repository.Repository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Alunos2.db3"));
                 }
                 return database;
             }
         }
+
 
         public App()
         {

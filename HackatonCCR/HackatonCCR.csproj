@@ -21,6 +21,9 @@
     <Compile Update="View\AlunosPage.xaml.cs">
       <DependentUpon>AlunosPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="View\EscolasPage.xaml.cs">
+      <DependentUpon>EscolasPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -30,7 +33,7 @@
     <EmbeddedResource Update="View\AlunosPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\EmpresaPage.xaml">
+    <EmbeddedResource Update="View\EscolaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\EscolasPage.xaml">

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace HackatonCCR.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EmpresaPage : ContentPage
+    public partial class EscolaPage : ContentPage
     {
-        public EmpresaPage()
+        public EscolaPage()
         {
             InitializeComponent();
         }

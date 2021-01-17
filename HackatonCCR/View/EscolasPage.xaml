@@ -1,12 +1,198 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HackatonCCR.View.EscolasPage">
+             x:Class="HackatonCCR.View.EscolasPage"
+             Title="Escolas">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Escolas"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+
+
+
+            <Frame
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="20,10,20,10"
+                    BackgroundColor="#EBEBEB"
+                    CornerRadius="100"
+                >
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    Margin="10,0,10,0"
+                    >
+
+                    <Entry
+                            x:Name="EntryPesquisa"
+                            Placeholder="Pesquisar..."
+                            IsVisible="True"
+                            IsReadOnly="False"
+                            HorizontalOptions="FillAndExpand"
+                            HorizontalTextAlignment="Start"
+                            IsPassword="True"
+                            Margin="0"
+                            TextColor="#00BD51"
+                            />
+
+                    <ImageButton Source="SearchIcon"
+                        HeightRequest="35"
+                        WidthRequest="35"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="#00BD51"
+                        Clicked="OpenFilter"
+                        />
+
+                    <ImageButton Source="FilterIcon"
+                        HeightRequest="35"
+                        WidthRequest="35"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="#00BD51"
+                        Clicked="OpenFilter"
+                        />
+
+                    <ImageButton Source="AddIcon"
+                        HeightRequest="35"
+                        WidthRequest="35"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        BackgroundColor="#00BD51"
+                        />
+
+                </StackLayout>
+            </Frame>
+
+
+            <ListView x:Name="lstEscola"
+                      RowHeight="90"
+                      SeparatorVisibility="None" 
+                      BackgroundColor="#fff"
+                      AutomationId="{Binding EscolaId}"
+                      ItemSelected="lstEscola_ItemSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="10"
+                                        Margin="5"
+                                        BackgroundColor="#EBEBEB"
+                                        >
+
+                                <Frame CornerRadius="100" 
+                                    HorizontalOptions="Center"
+                                    IsClippedToBounds="True"
+                                    Padding="0">
+
+                                    <Image Source="{Binding Image}"
+                                        VerticalOptions="CenterAndExpand"
+                                        HorizontalOptions="CenterAndExpand"
+                                        />
+
+                                </Frame>
+
+                                <StackLayout Orientation="Vertical">
+
+                                    <Label Text="{Binding Name}"
+                                            FontSize="Medium"
+                                            VerticalOptions="Start"
+                                            TextColor="#00BD51"
+                                            />
+
+                                    <StackLayout
+                                        Orientation="Vertical"
+                                        WidthRequest="250"
+                                        >
+
+                                        <StackLayout Orientation="Horizontal"
+                                                     HorizontalOptions="Start"
+                                                     VerticalOptions="Start">
+
+                                            <Label Text="Alunos Disponiveis: "
+                                                    FontSize="12"
+                                                    VerticalOptions="Start"
+                                                    TextColor="#ADADAD"
+                                                    />
+
+                                            <Label Text="{Binding AlunosDisponiveis}"
+                                                    FontSize="12"
+                                                    VerticalOptions="Start"
+                                                    TextColor="#ADADAD"
+                                                   FontAttributes="Bold"
+                                                    />
+
+                                        </StackLayout>
+
+
+                                        <Label Text="{Binding Distancia}"
+                                                FontSize="10"
+                                                VerticalOptions="Start"
+                                                TextColor="#ADADAD"
+                                                />
+
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <Frame CornerRadius="100" 
+                                    Padding="0"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="End"
+                                    Margin="5"
+                                    >
+
+                                    <StackLayout Orientation="Vertical"
+                                                 VerticalOptions="Fill"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 >
+                                        <ImageButton Source="{Binding TipoInclusao1}"
+                                                    HeightRequest="40"
+                                                    WidthRequest="40"
+                                                    HorizontalOptions="Start"
+                                                    VerticalOptions="Start"
+                                                    BackgroundColor="#00BD51"
+                                                    />
+                                        <ImageButton Source="{Binding TipoInclusao2}"
+                                                    HeightRequest="40"
+                                                    WidthRequest="40"
+                                                    HorizontalOptions="End"
+                                                    VerticalOptions="Start"
+                                                    BackgroundColor="#00BD51"
+                                                    />
+                                        <ImageButton Source="{Binding TipoInclusao3}"
+                                                    HeightRequest="40"
+                                                    WidthRequest="40"
+                                                    HorizontalOptions="End"
+                                                    VerticalOptions="Start"
+                                                    BackgroundColor="#00BD51"
+                                                    />
+                                        <ImageButton Source="{Binding TipoInclusao4}"
+                                                    HeightRequest="40"
+                                                    WidthRequest="40"
+                                                    HorizontalOptions="End"
+                                                    VerticalOptions="End"
+                                                    BackgroundColor="#00BD51"
+                                                    />
+                                    </StackLayout>
+
+                                </Frame>
+                            </StackLayout>
+
+
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HackatonCCR
+namespace HackatonCCR.DTO
 {
     public class AlunoDTO
     {

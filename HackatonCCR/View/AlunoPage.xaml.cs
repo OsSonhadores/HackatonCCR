@@ -1,4 +1,5 @@
-﻿using HackatonCCR.Model;
+﻿using HackatonCCR.DTO;
+using HackatonCCR.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
