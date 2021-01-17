@@ -23,8 +23,8 @@ namespace HackatonCCR.Service
 
             var pagina2 = new MenuPageItem()
             {
-                Title = "Sei la",
-                Icon = "AlunosIcon",
+                Title = "Sair",
+                Icon = "SairIcon",
                 TargetType = typeof(AlunosPage)
             };
 

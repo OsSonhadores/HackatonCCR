@@ -2,11 +2,27 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using HackatonCCR.View;
+using HackatonCCR.Repository;
+using System.IO;
 
 namespace HackatonCCR
 {
     public partial class App : Application
     {
+
+        static AlunoRepository database;
+        public static AlunoRepository Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new AlunoRepository(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Alunos2.db3"));
+                }
+                return database;
+            }
+        }
+
         public App()
         {
             InitializeComponent();

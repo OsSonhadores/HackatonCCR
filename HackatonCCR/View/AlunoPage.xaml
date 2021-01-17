@@ -3,10 +3,276 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HackatonCCR.View.AlunoPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Frame BackgroundColor="#EBEBEB"
+               BorderColor="#00BD51"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"
+               Margin="30"
+               CornerRadius="10">
+
+            <StackLayout 
+                BackgroundColor="#EBEBEB"
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                >
+
+
+                <Frame CornerRadius="100" 
+                        Padding="0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                       >
+
+                        <Image x:Name="AlunoImage" HeightRequest="100"/>
+
+                    </Frame>
+
+                <Label x:Name="AlunoName" TextColor="#00BD51" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="Start">
+
+                    <Label Text="Idade: " TextColor="#616161"/>
+                    <Label x:Name="AlunoAge" TextColor="#303030" FontAttributes="Bold"/>
+                
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="Start">
+
+                    <Label Text="Instituição: " TextColor="#616161"/>
+                    <Label x:Name="AlunoInstitution" TextColor="#303030" FontAttributes="Bold"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="Start">
+
+                    <ImageButton x:Name="imgBtnTipoInclusao"
+                        BackgroundColor="#00BD51"
+                                 />
+
+                    <ImageButton Source="LaudoIcon"
+                        BackgroundColor="#00BD51"
+                                 />
+
+                    <ImageButton Source="LaudoIcon"
+                        BackgroundColor="#00BD51"
+                                 />
+
+                </StackLayout>
+
+
+                <Label Text="Habilidades" TextColor="#00BD51" FontSize="25" HorizontalTextAlignment="Left" Margin="0,20,0,0"/>
+
+                <ScrollView Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical"
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="CenterAndExpand">
+                    
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                            Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Lideranca" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="180" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" ValueChanged="MudaLideranca"/>
+                                    <Label x:Name="AlunoLideranca" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                            Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Trabalho Em Grupo" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="125" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaTrabalhoEmGrupo"/>
+                                    <Label x:Name="AlunoTrabalhoEmGrupo" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                            Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Comunicacao" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="160" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaComunicacao"/>
+                                    <Label x:Name="AlunoComunicacao" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                            Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Resolucao De Problema" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="95" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaResolucaoDeProblema"/>
+                                    <Label x:Name="AlunoResolucaoDeProblema" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                            Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Flexibilidade" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="165" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaFlexibilidade"/>
+                                    <Label x:Name="AlunoFlexibilidade" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                                Orientation="Vertical"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Habilidades Interpessoais" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="85" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0" 
+                                            ValueChanged="MudaHabilidadesInterpessoais"/>
+                                    <Label x:Name="AlunoHabilidadesInterpessoais" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="100" 
+                                Padding="5"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Margin="5"
+                                BackgroundColor="#DCDCDC"
+                               >
+
+                            <StackLayout
+                                Orientation="Vertical"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                >
+
+                                <StackLayout Orientation="Horizontal"
+                                         VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="StartAndExpand"
+                                         Margin="5">
+                                    <Label Text="Trabalho Ético" TextColor="#303030" HorizontalOptions="Start"/>
+                                    <Slider MinimumTrackColor="#00BD51" MaximumTrackColor="#00BD51" WidthRequest="155" VerticalOptions="FillAndExpand" Maximum="100" Minimum="0"
+                                            ValueChanged="MudaTrabalhoEtico"/>
+                                    <Label x:Name="AlunoTrabalhoEtico" TextColor="#303030" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                        
+
+                    </StackLayout>
+                </ScrollView>
+
+
+
+            </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>
