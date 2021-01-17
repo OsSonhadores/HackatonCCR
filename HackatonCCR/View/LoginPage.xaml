@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackatonCCR.View.LoginPage"
+             >
+    <ContentPage.Content>
+        <StackLayout
+            
+            HorizontalOptions="FillAndExpand"
+            Margin="60"
+            VerticalOptions="Center"
+            >
+
+            <Image
+                Source="logo"
+                WidthRequest="250"
+                />
+
+
+            <Frame
+                BackgroundColor="#EBEBEB"
+                CornerRadius="15"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"
+                BorderColor="#DCDCDC"
+                
+                >
+                <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    >
+
+
+                    <Entry
+                        x:Name="EntryEmail"
+                        Placeholder="Email"
+                        IsVisible="True"
+                        IsReadOnly="False"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Start"
+                        IsPassword="False"
+                        Margin="10"                        
+                        TextColor="#00BD51"
+                        />
+
+                    <Entry
+                        x:Name="EntrySenha"
+                        Placeholder="Senha"
+                        IsVisible="True"
+                        IsReadOnly="False"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Start"
+                        IsPassword="True"
+                        Margin="10"
+                        TextColor="#00BD51"
+                        />
+
+                    <Button Text="Entrar" 
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="End" 
+                            Padding="5" 
+                            BackgroundColor="#00BD51" 
+                            TextColor="#EBEBEB" 
+                            FontFamily="Lobster-Regular"
+                            Clicked="Logar"/>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,11 @@
+
+/HackatonCCR/obj/*
+/HackatonCCR/bin/*
+
+/HackatonCCR.Android/obj/*
+/HackatonCCR.Android/bin/*
+
+/HackatonCCR.iOS/obj/*
+/HackatonCCR.iOS/bin/*
+
+/.vs/*

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackatonCCR.View.AlunosPage"
+             Title="Alunos">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView x:Name="lstAluno" 
+                      RowHeight="90"
+                      SeparatorVisibility="None" 
+                      BackgroundColor="#fff"
+                      AutomationId="{Binding AlunoId}"
+                      ItemSelected="lstAluno_ItemSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="10"
+                                        Margin="5"
+                                        BackgroundColor="#EBEBEB"
+                                        >
+
+                                <Frame CornerRadius="100" 
+                                    HorizontalOptions="Center"
+                                    IsClippedToBounds="True"
+                                    Padding="0">
+
+                                    <Image Source="{Binding Image}"
+                                        VerticalOptions="CenterAndExpand"
+                                        HorizontalOptions="CenterAndExpand"
+                                        />
+
+                                </Frame>
+
+                                <StackLayout Orientation="Vertical">
+                                    
+                                    <Label Text="{Binding Name}"
+                                            FontSize="Medium"
+                                            VerticalOptions="Start"
+                                            TextColor="#00BD51"
+                                            />
+
+                                    <StackLayout
+                                        Orientation="Horizontal"
+                                        >
+                                        
+                                        <Label Text="{Binding Infos}"
+                                                FontSize="10"
+                                                VerticalOptions="Start"
+                                                TextColor="#ADADAD"
+                                                />
+                                
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <Frame CornerRadius="100" 
+                                    Padding="0"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="End">
+
+                                    <ImageButton Source="AddIcon"
+                                                AutomationId="{Binding AlunoId}"
+                                                HeightRequest="30"
+                                                WidthRequest="30"
+                                                HorizontalOptions="End"
+                                                VerticalOptions="End"
+                                                BackgroundColor="#00BD51"
+                                                />
+                                </Frame>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+    
+    
+    
+</ContentPage>

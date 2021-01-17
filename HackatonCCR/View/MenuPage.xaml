@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackatonCCR.View.MenuPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+                <StackLayout BackgroundColor="#00BD51" HeightRequest="800">
+
+                    <Image Source="loguinhoBranca"
+                           VerticalOptions="Start"
+                           HeightRequest="200"
+                           Margin="20,0,20,0"
+                        />
+
+
+                    <ListView x:Name="lstMenuNavegacao" RowHeight="60"
+                              SeparatorVisibility="None" BackgroundColor="#fff"
+                              ItemSelected="lstMenuNavegacao_ItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout
+                                        VerticalOptions="FillAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="10"
+                                        >
+                                        <Image
+                                            Source="{Binding Icon}"
+                                            WidthRequest="40"
+                                            HeightRequest="40"
+                                            VerticalOptions="Center"
+                                            />
+                                        
+                                        <Label Text="{Binding Title}"
+                                               FontSize="Medium"
+                                               VerticalOptions="Center"
+                                               TextColor="#00BD51"
+                                               />
+                                        
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                
+
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+
+    <MasterDetailPage.Detail>
+        <ContentPage />
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
