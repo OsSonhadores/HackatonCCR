@@ -19,7 +19,7 @@ namespace HackatonCCR.Service
             {
                 EscolaId = 1,
                 Name = "Escola Estadual Souza Lima",
-                Image = "EscolaIconDefaut",
+                Image = "EscolasDefautIcon",
                 Distancia = "10.5 KM",
                 AlunosDisponiveis = "15",
                 TipoInclusao1 = "VisualGraveIcon",
@@ -32,7 +32,7 @@ namespace HackatonCCR.Service
             {
                 EscolaId = 2,
                 Name = "Escola Estadual Martins Pena",
-                Image = "EscolaIconDefaut",
+                Image = "EscolasDefautIcon",
                 Distancia = "3.5 KM",
                 AlunosDisponiveis = "10",
                 TipoInclusao1 = "VisualGraveIcon",
@@ -45,7 +45,7 @@ namespace HackatonCCR.Service
             {
                 EscolaId = 3,
                 Name = "Escola Estadual Dona Gonçalves",
-                Image = "EscolaIconDefaut",
+                Image = "EscolasDefautIcon",
                 Distancia = "7.5 KM",
                 AlunosDisponiveis = "10",
                 TipoInclusao1 = "VisualGraveIcon",
@@ -58,7 +58,7 @@ namespace HackatonCCR.Service
             {
                 EscolaId = 3,
                 Name = "Escola Estadual Lucas Lima",
-                Image = "EscolaIconDefaut",
+                Image = "EscolasDefautIcon",
                 Distancia = "1.5 KM",
                 AlunosDisponiveis = "6",
                 TipoInclusao1 = "VisualGraveIcon",

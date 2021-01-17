@@ -4,9 +4,11 @@
              x:Class="HackatonCCR.View.EscolaPage">
     <ContentPage.Content>
         <StackLayout>
+
             <Label Text="Pagina da escola"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
