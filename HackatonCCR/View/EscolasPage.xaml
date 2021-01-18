@@ -106,7 +106,7 @@
 
                                     <StackLayout
                                         Orientation="Vertical"
-                                        WidthRequest="250"
+                                        WidthRequest="200"
                                         >
 
                                         <StackLayout Orientation="Horizontal"
@@ -138,48 +138,58 @@
                                     </StackLayout>
 
                                 </StackLayout>
-                                <Frame CornerRadius="100" 
-                                    Padding="0"
-                                    HorizontalOptions="End"
-                                    VerticalOptions="End"
-                                    Margin="5"
-                                    >
 
-                                    <StackLayout Orientation="Vertical"
-                                                 VerticalOptions="Fill"
-                                                 HorizontalOptions="FillAndExpand"
+                                <StackLayout Orientation="Vertical"
+                                    WidthRequest="70"
+                                    HeightRequest="70"                                             
+                                    >
+                                    
+                                    <StackLayout Orientation="Horizontal"
+                                                 WidthRequest="70"
+                                                 HeightRequest="35"
                                                  >
+                                        
                                         <ImageButton Source="{Binding TipoInclusao1}"
-                                                    HeightRequest="40"
-                                                    WidthRequest="40"
+                                                    HeightRequest="35"
+                                                    WidthRequest="35"
                                                     HorizontalOptions="Start"
                                                     VerticalOptions="Start"
                                                     BackgroundColor="#00BD51"
                                                     />
+
                                         <ImageButton Source="{Binding TipoInclusao2}"
-                                                    HeightRequest="40"
-                                                    WidthRequest="40"
+                                                    HeightRequest="35"
+                                                    WidthRequest="35"
                                                     HorizontalOptions="End"
                                                     VerticalOptions="Start"
                                                     BackgroundColor="#00BD51"
                                                     />
-                                        <ImageButton Source="{Binding TipoInclusao3}"
-                                                    HeightRequest="40"
-                                                    WidthRequest="40"
-                                                    HorizontalOptions="End"
-                                                    VerticalOptions="Start"
-                                                    BackgroundColor="#00BD51"
-                                                    />
-                                        <ImageButton Source="{Binding TipoInclusao4}"
-                                                    HeightRequest="40"
-                                                    WidthRequest="40"
-                                                    HorizontalOptions="End"
-                                                    VerticalOptions="End"
-                                                    BackgroundColor="#00BD51"
-                                                    />
+    
                                     </StackLayout>
 
-                                </Frame>
+                                    <StackLayout Orientation="Horizontal"
+                                                     WidthRequest="70"
+                                                     HeightRequest="35"
+                                                     >
+
+                                        <ImageButton Source="{Binding TipoInclusao3}"
+                                                        HeightRequest="35"
+                                                        WidthRequest="35"
+                                                        HorizontalOptions="Start"
+                                                        VerticalOptions="Start"
+                                                        BackgroundColor="#00BD51"
+                                                        />
+
+                                        <ImageButton Source="{Binding TipoInclusao4}"
+                                                        HeightRequest="35"
+                                                        WidthRequest="35"
+                                                        HorizontalOptions="End"
+                                                        VerticalOptions="Start"
+                                                        BackgroundColor="#00BD51"
+                                                        />
+                                    </StackLayout>
+                                </StackLayout>
+
                             </StackLayout>
 
 

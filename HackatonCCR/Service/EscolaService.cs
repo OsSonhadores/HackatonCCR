@@ -18,38 +18,38 @@ namespace HackatonCCR.Service
             var escola1 = new EscolaDTO()
             {
                 EscolaId = 1,
-                Name = "Escola Estadual Souza Lima",
-                Image = "EscolasDefautIcon",
+                Name = "E. E. Souza Lima",
+                Image = "EscolasDefaultIcon",
                 Distancia = "10.5 KM",
-                AlunosDisponiveis = "15",
-                TipoInclusao1 = "VisualGraveIcon",
-                TipoInclusao2 = "BaixaRendaIcon",
+                AlunosDisponiveis = "2",
                 TipoInclusao3 = "AltismoIcon",
+                TipoInclusao1 = "VisualGraveIcon",
+                TipoInclusao2 = "VisualBaixaIcon",
                 TipoInclusao4 = "CadeiranteIcon",
             };
 
             var escola2 = new EscolaDTO()
             {
                 EscolaId = 2,
-                Name = "Escola Estadual Martins Pena",
-                Image = "EscolasDefautIcon",
+                Name = "ONG Acolher E Cuidar",
+                Image = "EscolasDefaultIcon",
                 Distancia = "3.5 KM",
-                AlunosDisponiveis = "10",
-                TipoInclusao1 = "VisualGraveIcon",
+                AlunosDisponiveis = "2",
                 TipoInclusao2 = "BaixaRendaIcon",
+                TipoInclusao4 = "VisualBaixaIcon",
                 TipoInclusao3 = "AltismoIcon",
-                TipoInclusao4 = "CadeiranteIcon",
+                TipoInclusao1 = "VisualGraveIcon",
             };
 
             var escola3 = new EscolaDTO()
             {
                 EscolaId = 3,
-                Name = "Escola Estadual Dona Gonçalves",
-                Image = "EscolasDefautIcon",
+                Name = "E. E. Dona Gonçalves",
+                Image = "EscolasDefaultIcon",
                 Distancia = "7.5 KM",
-                AlunosDisponiveis = "10",
-                TipoInclusao1 = "VisualGraveIcon",
+                AlunosDisponiveis = "2",
                 TipoInclusao2 = "BaixaRendaIcon",
+                TipoInclusao1 = "VisualGraveIcon",
                 TipoInclusao3 = "AltismoIcon",
                 TipoInclusao4 = "CadeiranteIcon",
             };
@@ -57,13 +57,13 @@ namespace HackatonCCR.Service
             var escola4 = new EscolaDTO()
             {
                 EscolaId = 3,
-                Name = "Escola Estadual Lucas Lima",
-                Image = "EscolasDefautIcon",
+                Name = "ONG Saber E Ensinar",
+                Image = "EscolasDefaultIcon",
                 Distancia = "1.5 KM",
-                AlunosDisponiveis = "6",
+                AlunosDisponiveis = "2",
                 TipoInclusao1 = "VisualGraveIcon",
                 TipoInclusao2 = "BaixaRendaIcon",
-                TipoInclusao3 = "AltismoIcon",
+                TipoInclusao3 = "VisualBaixaIcon",
                 TipoInclusao4 = "CadeiranteIcon",
             };
 
